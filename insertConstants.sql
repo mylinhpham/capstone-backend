@@ -1,0 +1,20 @@
+insert into constants values("VIRTUAL_TOUR_HEADER" , 'Placeholder', 250);
+insert into constants values("VIRTUAL_TOUR_MAIN_TEXT" , 'The card layouts can vary to support the types of content they contain', 250);
+insert into constants values("EXPERIENCE_HEADER" , 'Experience the Process', 250);
+insert into constants values("EXPERIENCE_MAIN_TEXT" , 'The card layouts can vary to support the types of content they contain', 250);
+insert into constants values("FAQ_HEADER" , 'Questions You Should Ask', 250);
+insert into constants values("FAQ_MAIN_TEXT" , 'The card layouts can vary to support the types of content they contain', 250);
+insert into constants values("SMALL_IMAGE_HEADER" , 'Sample Header', 250);
+insert into constants values("SMALL_IMAGE_TEXT" , 'Sample Text Medium', 250);
+insert into constants values("LONG_TEXT" , 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 250);
+insert into constants values("VERT_NAV_HEADER" , 'Interactive Clinic', 250);
+insert into constants values("PLACEHOLDER_QUESTION" , 'Q: How does breast cancer effect breast milk production?', 250);
+insert into constants values("PLACEHOLDER_EXPANDED" , 'A: In the event of suggestive symptoms or when a screening test has given a positive result, various examinations should be performed to confirm or refute the diagnosis.', 250);
+insert into constants values("TEAM_SAMPLE_TEXT" , 'Dr. Song Hye Kyo', 250);
+insert into constants values("TEAM_SAMPLE_SUBTEXT" , 'Oncology Specialist', 250);
+insert into constants values("TEAM_SAMPLE_MAINTEXT" , 'Dr. Song gained her undergraduate degree in Biology from University of California, Irvine prior to attending University of Southern California''s Keck School of Medicine (2012).', 250);
+insert into constants values("HEADER_TITLE", 'Interactive Clinic', 250);
+insert into constants values("BUTTON_TEXT", 'Learn More', 250);
+insert into constants values("TREATMENT_TEXT", 'Treatment', 250);
+insert into constants values("BREAST_CANCER_TEXT", 'Breast Cancer', 250);
+
