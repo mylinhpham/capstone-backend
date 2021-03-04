@@ -6,12 +6,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Entity(name = "constants")
-@Table
+@Entity
+@Table(name="constant")
 public class Constant {
 	@Id
-	public String name;
-	public String value;
+	public String stringName;
+	public String stringValue;
 	public int charLimit;
 
 }

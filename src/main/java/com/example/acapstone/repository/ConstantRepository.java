@@ -1,6 +1,7 @@
 package com.example.acapstone.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.example.acapstone.domain.Constant;
@@ -9,19 +10,18 @@ import java.util.List;
 
 @Repository
 public interface ConstantRepository extends JpaRepository<Constant, String> {
-
-		//need to fix this query. this will return specified constant
-	  @Query(value = "SELECT * FROM Constant WHERE name = ?1", nativeQuery = true)
-	  Constant getConstant(String constantName); 
-	 
 	  
 	  //returns all constants
-	  @Query(value = "SELECT * FROM Constant", nativeQuery = true)
+	  @Query(value = "SELECT * FROM constant", nativeQuery = true)
 	  List<Constant> getAllConstants();
 	  
+
+		// return specified constant value
+	  @Query(value = "SELECT * FROM constant c WHERE LOWER(c.string_name) = LOWER(:searchTerm) limit 1", nativeQuery = true)
+	  Constant getConstant(@Param("searchTerm") String searchTerm);
 	  
 	  //to update the constant value
-	  void updateConstant( String constantName, String updatedValue);
-	  
+	  @Query(value = "UPDATE constant SET string_value = :updatedTerm WHERE string_name = :currentConstant", nativeQuery = true)
+	  Constant updateConstant(@Param("updatedTerm") String updatedTerm, @Param("currentConstant") String currentConstant);
 
 }
