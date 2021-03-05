@@ -24,4 +24,6 @@ public interface ConstantRepository extends JpaRepository<Constant, String> {
 	  @Query(value = "UPDATE constant SET string_value = :updatedTerm WHERE string_name = :currentConstant", nativeQuery = true)
 	  Constant updateConstant(@Param("updatedTerm") String updatedTerm, @Param("currentConstant") String currentConstant);
 
+	  @Query(value = "DELETE constant FROM constant WHERE string_name = :currentConstant", nativeQuery = true)
+	  Constant deleteConstant(@Param("currentConstant") String currentConstant);
 }

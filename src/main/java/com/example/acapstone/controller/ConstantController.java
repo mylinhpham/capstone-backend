@@ -38,17 +38,22 @@ public class ConstantController {
 		return new ResponseEntity<List<Constant>>(constants, HttpStatus.OK);
 	}
 	
-	@GetMapping(path="/constant") //update the url links // HATEOS
+	@GetMapping(path="/constant")
 	public ResponseEntity<Constant> getConstant(@RequestParam String currentConstant) {
 		return new ResponseEntity<Constant>(constantRepository.getConstant(currentConstant), HttpStatus.OK);
 		
 	}
 	
-	@PostMapping(path="/update") //may or may not return entity based on you/whats better
+	@PostMapping(path="/update")
 	public ResponseEntity<Constant> updaterConstant(@RequestParam String currentConstant, @RequestParam String updatedValue) {
 		return new ResponseEntity<Constant>(constantRepository.updateConstant(currentConstant, updatedValue),  HttpStatus.OK); 
 	}
 	
-	//delete constant, multiple updates, etc. 
+	@PostMapping(path="/delete")
+	public ResponseEntity<Constant> deleteConstant(@RequestParam String currentConstant, @RequestParam String updatedValue) {
+		return new ResponseEntity<Constant>(constantRepository.updateConstant(currentConstant, updatedValue),  HttpStatus.OK); 
+	}
+	
+	//multiple updates? 
 
 }
