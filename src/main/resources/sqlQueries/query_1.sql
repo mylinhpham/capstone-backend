@@ -17,4 +17,11 @@ insert  into constant (string_name, string_value, char_limit)values("HEADER_TITL
 insert  into constant (string_name, string_value, char_limit)values("BUTTON_TEXT", 'Learn More', 250);
 insert  into constant (string_name, string_value, char_limit)values("TREATMENT_TEXT", 'Treatment', 250);
 insert  into constant (string_name, string_value, char_limit)values("BREAST_CANCER_TEXT", 'Breast Cancer', 250);
-
+insert  into constant (string_name, string_value, char_limit)values("LANDING_PAGE_TITLE_A", 'Interactive', 250);
+insert  into constant (string_name, string_value, char_limit)values("LANDING_PAGE_TITLE_B", 'Clinic', 250);
+insert  into constant (string_name, string_value, char_limit)values("BREAST_CANCER_TEXT", 'Breast Cancer', 250);
+insert  into constant (string_name, string_value, char_limit)values("TESTICULAR_CANCER_TEXT", 'Testicular Cancer', 250);
+insert  into constant (string_name, string_value, char_limit)values("COLON_CANCER_TEXT", 'Colon Cancer', 250);
+insert  into constant (string_name, string_value, char_limit)values("PATIENT_STORIES", 'Patient Stories', 250);
+insert  into constant (string_name, string_value, char_limit)values("MEET_TEAM", 'Meet Your Team', 250);
+insert  into constant (string_name, string_value, char_limit)values("ABOUT", 'About the Site', 250);

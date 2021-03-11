@@ -13,5 +13,10 @@ public class Constant {
 	public String stringName;
 	public String stringValue;
 	public int charLimit;
+	
+	public void updateValue(String value) {
+		this.stringValue = value;
+	}
+
 
 }
