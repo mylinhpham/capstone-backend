@@ -47,30 +47,25 @@ public class ConstantController {
 	
 	@GetMapping(path="/constantbyname")
 	public ResponseEntity<Constant> getConstantbyName(@RequestParam String currentConstant) {
-		return new ResponseEntity<Constant>(constantRepository.getConstantByName(currentConstant), HttpStatus.OK);
-		
+		return new ResponseEntity<Constant>(constantRepository.getConstantByName(currentConstant), HttpStatus.OK);	
 	}
 	
 	@GetMapping(path="/constantbyvalue")
 	public ResponseEntity<Constant> getConstantByValue(@RequestParam String currentConstant) {
 		return new ResponseEntity<Constant>(constantRepository.getConstantByValue(currentConstant), HttpStatus.OK);
-		
 	}
 	
 	@PutMapping(path="/update", headers="Accept=application/json")
 	public  ResponseEntity<?> updateConstant(@RequestParam String stringName, @RequestParam String stringValue) {
-		System.out.println("DOES IT GET HEREEEEEEE");
 		Constant curr = constantRepository.getConstantByName(stringName);
-		
-		
 		if(curr == null)
 		{
-			return new ResponseEntity<String>(HttpStatus.NOT_FOUND); // returns 404
+			return new ResponseEntity<String>(HttpStatus.NOT_FOUND); 
 		}
 		
 		curr.updateValue(stringValue);
 		constantRepository.save(curr);
-		return ResponseEntity.noContent().build(); //returns 204 -> OK
+		return ResponseEntity.noContent().build(); 
 	}
 		
 	@DeleteMapping(path="/delete")
