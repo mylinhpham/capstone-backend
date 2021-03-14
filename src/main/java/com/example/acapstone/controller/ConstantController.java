@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,7 +32,7 @@ public class ConstantController {
 	@Autowired
 	private ConstantRepository constantRepository;
 	
-	
+	@CrossOrigin(origins="*")
 	@GetMapping(path="/constants")
 	public ResponseEntity<List<Constant>> getAllConstants() {
 		List<Constant> constants = constantRepository.getAllConstants();
@@ -45,29 +46,35 @@ public class ConstantController {
 		return new ResponseEntity<List<Constant>>(constants, HttpStatus.OK);
 	}
 	
+	@CrossOrigin(origins="*")
 	@GetMapping(path="/constantbyname")
 	public ResponseEntity<Constant> getConstantbyName(@RequestParam String currentConstant) {
 		return new ResponseEntity<Constant>(constantRepository.getConstantByName(currentConstant), HttpStatus.OK);	
 	}
 	
+	@CrossOrigin(origins="*")
 	@GetMapping(path="/constantbyvalue")
 	public ResponseEntity<Constant> getConstantByValue(@RequestParam String currentConstant) {
 		return new ResponseEntity<Constant>(constantRepository.getConstantByValue(currentConstant), HttpStatus.OK);
 	}
 	
+	@CrossOrigin(origins="*")
 	@PutMapping(path="/update", headers="Accept=application/json")
 	public  ResponseEntity<?> updateConstant(@RequestParam String stringName, @RequestParam String stringValue) {
 		Constant curr = constantRepository.getConstantByName(stringName);
 		if(curr == null)
 		{
-			return new ResponseEntity<String>(HttpStatus.NOT_FOUND); 
+			System.out.println(curr + " curr");
+			return ResponseEntity.notFound().build();
 		}
 		
 		curr.updateValue(stringValue);
 		constantRepository.save(curr);
 		return ResponseEntity.noContent().build(); 
 	}
-		
+	
+	
+	@CrossOrigin(origins="*")
 	@DeleteMapping(path="/delete")
 	public void deleteConstant(@RequestParam String currentConstant) {
 		constantRepository.deleteById(currentConstant);
