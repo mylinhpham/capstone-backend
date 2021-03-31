@@ -13,9 +13,14 @@ public class Constant {
 	public String stringName;
 	public String stringValue;
 	public int charLimit;
+	public String url;
 	
 	public void updateValue(String value) {
 		this.stringValue = value;
+	}
+	
+	public void updateUrl(String newUrl) {
+		this.url = newUrl;
 	}
 
 

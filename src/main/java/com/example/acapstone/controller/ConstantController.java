@@ -59,7 +59,7 @@ public class ConstantController {
 	}
 	
 	@CrossOrigin(origins="*")
-	@PutMapping(path="/update", headers="Accept=application/json")
+	@PutMapping(path="/updateValue", headers="Accept=application/json")
 	public  ResponseEntity<?> updateConstant(@RequestParam String stringName, @RequestParam String stringValue) {
 		Constant curr = constantRepository.getConstantByName(stringName);
 		if(curr == null)
@@ -72,6 +72,23 @@ public class ConstantController {
 		constantRepository.save(curr);
 		return ResponseEntity.noContent().build(); 
 	}
+	
+	
+	@CrossOrigin(origins="*")
+	@PutMapping(path="/updateUrl", headers="Accept=application/json")
+	public  ResponseEntity<?> updateUrl(@RequestParam String stringName, @RequestParam String newUrl) {
+		Constant curr = constantRepository.getConstantByName(stringName);
+		if(curr == null)
+		{
+			System.out.println(curr + " curr");
+			return ResponseEntity.notFound().build();
+		}
+		
+		curr.updateUrl(newUrl);
+		constantRepository.save(curr);
+		return ResponseEntity.noContent().build(); 
+	}
+	
 	
 	
 	@CrossOrigin(origins="*")
