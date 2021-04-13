@@ -64,7 +64,6 @@ public class ConstantController {
 		Constant curr = constantRepository.getConstantByName(stringName);
 		if(curr == null)
 		{
-			System.out.println(curr + " curr");
 			return ResponseEntity.notFound().build();
 		}
 		
@@ -80,7 +79,6 @@ public class ConstantController {
 		Constant curr = constantRepository.getConstantByName(stringName);
 		if(curr == null)
 		{
-			System.out.println(curr + " curr");
 			return ResponseEntity.notFound().build();
 		}
 		
