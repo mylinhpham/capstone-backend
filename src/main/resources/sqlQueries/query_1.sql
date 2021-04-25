@@ -40,3 +40,52 @@ insert  into constant(string_name, string_value, char_limit, url)values("BREASTC
 insert  into constant(string_name, string_value, char_limit, url)values("BREASTCANCER_VIDEO_2" , 'XFpA9xIOnyM', 250, "");
 insert  into constant(string_name, string_value, char_limit, url)values("BREASTCANCER_VIDEO_3" , 'ccl1dQZKqto', 250, "");
 insert  into constant(string_name, string_value, char_limit, url)values("BREASTCANCER_VIDEO_4" , 'X8u0vOSCa_E', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SCAN_HEADER_SUBTEXT" , 'Informing Your Treatment', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SCAN_TEXT" , 'Your First CT Scan', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SCAN_SUBTEXT" , 'The next step in your treatment process is a CT scan which helps staff simulate your future treatment. During this visit your care team will setup a profile to insure radiation hits the cancer and avoids your healthy tissue.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("CT_PROCESS" , 'The CT Scanning Process', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("CT_PROCESS_TEXT" , 'At this point you may have been to the clinic multiple times but never seen a CT scanner in person. Take a moment to familiarize yourself with the machine and watch a 3D visualization of the CT scanning process. These fascinating and complex machines weigh over 4,000 lbs, cost millions, and are solely dedicated to helping patients like you get better.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SCAN_TODAY_TEAM_TEXT" , 'The resulting data from the CT scan will be used by your care team to build a plan for your treatment. Below are some of the staff members you might interact with today and others who are hard at work behind the scenes, making sure you get the quality treatment you deserve.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SCAN_TOPIC_TO_ADDRESS_TEXT" , 'You might have a few questions on your first day, that is more than expected, and perfectly fine. Feel free to use the Interactive FAQ below to get some of those questions answered and receive ideas of topics to address both today and throughout your treatment.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SCAN_PATIENT_STORIES" , 'CT Scans can be a brand new experience for most people but will most likely become a familiar element of your treatment. Before proceeding to the next section, hear about the experiences of some patients when they took their first CT scan.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("CT_VIDEO_1" , 'sBM5R6mQ_EE', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("CT_VIDEO_2" , 'XFpA9xIOnyM', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("CT_VIDEO_3" , 'ccl1dQZKqto', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("CT_VIDEO_4" , 'X8u0vOSCa_E', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_PLAN_TEXT" , 'Your Radiation Plan', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_PLAN_SUBTEXT" , 'By now your support team has begun crafting a treatment plan based on your consultation and CT scan. This plan  includes the custom positioning of radiation beams to target your cancer while avoiding healthy tissue. Planning  something this important this often takes time, typically 3-7 weekdays.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_TODAY_TEAM_TEXT" , 'The resulting data from the CT scan will be used by your care team to build a plan for your treatment. Below are  some of the staff members you might interact with today and others who are hard at work behind the scenes, making  sure you get the quality treatment you deserve.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_TOPIC_TO_ADDRESS_TEXT" , 'You might have a few questions on your first day, that is more than expected, and perfectly fine. Feel free to use  the Interactive FAQ below to get some of those questions answered and receive ideas of topics to address both  today and throughout your treatment.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_PATIENT_STORIES" , 'The planning stage of treatment isn''t just for medical professionals, it''s for patients too. Before proceeding to  the next section, check out the videos below to hear how past patients coordinated transport and sought out  support groups during this period.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_VIDEO_1" , 'sBM5R6mQ_EE', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_VIDEO_2" , 'XFpA9xIOnyM', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_VIDEO_3" , 'ccl1dQZKqto', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("RAD_VIDEO_4" , 'X8u0vOSCa_E', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("TREATMENT_SUBTEXT" , 'Receiving Your Treatment', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("TREATMENT_JOURNEY" , 'Your Treatment Journey', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("TREATMENT_JOURNEY_TEXT" , 'From this point onwards your treatment will be unique to you. You will likely receive radiation every weekday and meet with your nurse and doctor once a week. Even if you don’t see them every day, your doctor is in close communication with your radiation therapists and reviews the results of any X-rays or CT scans.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("FOLLOWUP_SUBTEXT" , 'After Your Treatment', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("YOUR_LIFE" , 'Your Life, Post-Treatment', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("YOUR_LIFE_TEXT" , 'Following the end of your radiation treatment, you will continue to meet with your care team. These meetings are  used to assess the effectiveness of the treatment and monitor for any potential side effects. As time passes these  may reduce in frequency from once a month appointments to more long term check-ins.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("ONE_MONTH" , 'One Month Out', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("ONE_MONTH_TEXT" , 'Following the end of your radiation treatment, you will continue to meet with your care team. These meetings are  used to assess the effectiveness of the treatment and monitor for any potential side effects. Below are some  highlights of what you can expect in the first month of treatment.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("FEW_MONTH" , 'A Few Months Out', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("FEW_MONTH_TEXT" , 'Following the end of your radiation treatment, you will continue to meet with your care team. These meetings are  used to assess the effectiveness of the treatment and monitor for any potential side effects. As time passes these  may reduce in frequency from once a month appointments to more long term check-ins.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("LONG_TERM" , 'Long Term', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("LONG_TERM_TEXT" , 'Your care team will keep in touch with you to monitor your long term response to the radiation and watch for the  emergence of any side-effects.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("FOLLOWUP_PATIENT_STORIES" , 'The planning stage of treatment is not just for medical professionals, it is for patients too. Before proceeding to  the next section, check out the videos below to hear how past patients coordinated transport and sought out  support groups during this period.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_1" , 'Check for Symptoms', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_1_TEXT" , 'As the full effect of radiation therapy may not be seen until weeks or months after the end of treatment, your care team will continue keep a close eye on symptoms to assess its effectiveness.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_2" , 'Monitoring of Side Effects', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_2_TEXT" , 'During your first follow up appointment, the doctors and nurses in your care team may ask you if you''ve experienced any side effects of treatment. While side effects should go away gradually after the end of your treatment, some side effects may take longer to go away while others may be permanent.', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_3" , 'Additional CT Scans', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_3_TEXT" , 'Placeholder for Additional CT Scans', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_4" , 'Periodic Blood-work', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_4_TEXT" , 'Placeholder for Periodic Blood-work', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_5" , 'Monitoring Side Effects', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_5_TEXT" , 'Placeholder for Monitoring Side Effects', 250, "");
+
+
+
+
+
