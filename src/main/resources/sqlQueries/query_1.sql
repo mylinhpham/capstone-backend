@@ -84,6 +84,12 @@ insert  into constant(string_name, string_value, char_limit, url)values("DROPDOW
 insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_4_TEXT" , 'Placeholder for Periodic Blood-work', 250, "");
 insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_5" , 'Monitoring Side Effects', 250, "");
 insert  into constant(string_name, string_value, char_limit, url)values("DROPDOWN_5_TEXT" , 'Placeholder for Monitoring Side Effects', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("SIMULATION_TEXT" , 'Simulation Scan', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("PLANNING_TEXT" , 'Planning', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("TREATMENT_TEXT", 'Treatment', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("FOLLOW_UP_TEXT" , 'Follow Up', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("BACK_TO_HOME_TEXT" , 'Back To Home', 250, "");
+insert  into constant(string_name, string_value, char_limit, url)values("PLAN_HEADER_SUBTEXT_1" , 'Building Your Treatment', 250, "");
 
 
 
