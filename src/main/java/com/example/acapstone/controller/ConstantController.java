@@ -33,6 +33,13 @@ public class ConstantController {
 	private ConstantRepository constantRepository;
 	
 	@CrossOrigin(origins="*")
+	@GetMapping(path="/welcome") //fallback page so won't see white error page
+	public String welcome() {
+		return "Welcome to Interactive Story Telling Team DataBase";
+	}
+	
+	
+	@CrossOrigin(origins="*")
 	@GetMapping(path="/constants")
 	public ResponseEntity<List<Constant>> getAllConstants() {
 		List<Constant> constants = constantRepository.getAllConstants();
