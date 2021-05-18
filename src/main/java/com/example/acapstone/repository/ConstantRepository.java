@@ -15,14 +15,14 @@ import javax.transaction.Transactional;
 public interface ConstantRepository extends JpaRepository<Constant, String> {
 	  
 
-	  @Query(value = "SELECT * FROM constant", nativeQuery = true)
+	  @Query(value = "SELECT * FROM test", nativeQuery = true)
 	  List<Constant> getAllConstants();
 
 
-	  @Query(value = "SELECT * FROM constant c WHERE LOWER(c.string_name) = LOWER(:searchTerm) limit 1", nativeQuery = true)
+	  @Query(value = "SELECT * FROM test c WHERE LOWER(c.string_name) = LOWER(:searchTerm) limit 1", nativeQuery = true)
 	  Constant getConstantByName(@Param("searchTerm") String searchTerm);
 	  
 
-	  @Query(value = "SELECT * FROM constant c WHERE LOWER(c.string_value) = LOWER(:searchTerm) limit 1", nativeQuery = true)
+	  @Query(value = "SELECT * FROM test c WHERE LOWER(c.string_value) = LOWER(:searchTerm) limit 1", nativeQuery = true)
 	  Constant getConstantByValue(@Param("searchTerm") String searchTerm);
 }
